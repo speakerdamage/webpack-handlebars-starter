@@ -10,7 +10,8 @@ module.exports = {
 	context: path.resolve(__dirname),
 	entry: {
 		home: './src/views/home/home.js',
-		about: './src/views/about/about.js'
+		about: './src/views/about/about.js',
+		contact: './src/views/contact/contact.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -68,6 +69,12 @@ module.exports = {
 			filename: 'about/index.html',
 			template: './src/views/about/about.handlebars',
 			chunks: ['about']
+		}),
+		new HtmlWebpackPlugin({
+			title: 'Contact',
+			filename: 'contact/index.html',
+			template: './src/views/contact/contact.handlebars',
+			chunks: ['contact']
 		})
 	],
 	resolve: {
