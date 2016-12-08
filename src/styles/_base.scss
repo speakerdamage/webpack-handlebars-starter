@@ -4,6 +4,15 @@
 	box-sizing: border-box;
 }
 
+p {
+	color: $black;
+}
+
+.inner {
+	width: 90%;
+	margin: 0 auto;
+}
+
 .rotate {
   animation: rotate 0.5s linear;
 }
